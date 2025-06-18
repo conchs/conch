@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CONCH NEWS</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f9fc;
-    }
-
-    header {
-      text-align: center;
-      padding: 1rem 0;
-      background-color: #003366;
-      color: white;
-      font-family: "Arial Black", Gadget, sans-serif;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .tile {
-      background-color: #ffffff;
-      border: 2px solid #003366;
-      padding: 20px;
-      height: 150px;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #003366;
-      color: white;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Maritime News</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>CONCH NEWS</header>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Maritime News</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#cruise">Cruise & Yacht</a></li>
+                <li><a href="#seaports">Seaports</a></li>
+                <li><a href="#cargo">Cargo</a></li>
+                <li><a href="#offshore">Offshore</a></li>
+                <li><a href="#marine-life">Marine Life</a></li>
+                <li><a href="#coastal-culture">Coastal Culture</a></li>
+                <li><a href="#commercial-shipping">Commercial Shipping</a></li>
+                <li><a href="#resorts">Beaches & Resorts</a></li>
+                <li><a href="#seafood">Seafood</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
 
-  <main>
-    <div class="tile">Cargo ship stranded in Suez<br>delays global shipments.</div>
-    <div class="tile">Port of Singapore reports<br>record container traffic.</div>
-    <div class="tile">New eco-friendly fuel<br>tested on cargo liners.</div>
-    <div class="tile">Storm disrupts North Sea<br>shipping lanes overnight.</div>
-    <div class="tile">Global marine trade<br>rebounds post pandemic.</div>
-    <div class="tile">Navy aids in rescue<br>after fishing boat capsized.</div>
-    <div class="tile">Arctic shipping routes<br>gain traction in summer.</div>
-    <div class="tile">New IMO regulations<br>focus on emission cuts.</div>
-  </main>
+    <main class="container">
+        <section id="cruise" class="news-segment">
+            <h2>Cruise & Yacht</h2>
+            <div class="insight-tiles">
+                </div>
+        </section>
+        
+        <section id="seaports" class="news-segment">
+            <h2>Seaports</h2>
+            <div class="insight-cards">
+                 </div>
+        </section>
+        
+        </main>
 
-  <footer>&copy; Copyrights CONCH 2025</footer>
+    <footer>
+        <p>&copy; 2025 International Maritime News</p>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
