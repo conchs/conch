@@ -1,0 +1,16 @@
+<canvas id="tradeChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('tradeChart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['China', 'US', 'India', 'Germany'],
+      datasets: [{
+        label: 'Maritime Trade Volume',
+        data: [120, 90, 70, 60],
+        backgroundColor: 'steelblue'
+      }]
+    }
+  });
+</script>
