@@ -1,86 +1,39 @@
-/* General Body Styles */
+* {
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-.container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+header, footer {
+  background: navy;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
-
-/* Header and Navigation */
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
-
-nav .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+.tile {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
-
-nav .nav-links {
-    list-style: none;
-    display: flex;
+.tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
-
-nav .nav-links li {
-    padding: 0 15px;
-}
-
-nav .nav-links a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Insight Tiles and Cards */
-.insight-tiles, .insight-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.tile, .card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.tile img, .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    nav .nav-links {
-        display: none; /* Or implement a mobile menu */
-    }
-    
-    .container {
-        width: 95%;
-    }
+.tile:hover {
+  transform: scale(1.02);
 }
